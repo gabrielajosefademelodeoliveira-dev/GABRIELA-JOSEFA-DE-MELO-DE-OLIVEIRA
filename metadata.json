@@ -1,0 +1,6 @@
+{
+  "name": "IA com Consciência",
+  "description": "Aplicativo educacional em formato de jogo para crianças e adolescentes (6 a 15 anos) aprenderem a pesquisar, pensar, verificar e criar com Inteligência Artificial com ética e segurança.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

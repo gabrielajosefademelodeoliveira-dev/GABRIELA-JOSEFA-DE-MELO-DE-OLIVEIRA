@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Quicksand', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-handwriting {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+  }
+}
+
+/* Notebook lined background effect */
+.bg-notebook-paper {
+  background-color: #FAF7F2;
+  background-image: 
+    linear-gradient(#E8E2D5 1px, transparent 1px);
+  background-size: 100% 28px;
+}
+
+/* Notebook grid pattern */
+.bg-notebook-grid {
+  background-color: #FAF8F5;
+  background-image: 
+    radial-gradient(#E2D9CC 1.2px, transparent 1.2px);
+  background-size: 20px 20px;
+}
+
+/* Colored pencil effect border */
+.border-pencil {
+  border-style: solid;
+  border-color: #CBD5E1;
+  box-shadow: 2px 3px 0px 0px rgba(180, 160, 140, 0.25);
+}
+
+.border-pencil-amber {
+  border-color: #FCD34D;
+  box-shadow: 2px 3px 0px 0px rgba(245, 158, 11, 0.25);
+}
+
+.border-pencil-blue {
+  border-color: #93C5FD;
+  box-shadow: 2px 3px 0px 0px rgba(59, 130, 246, 0.2);
+}
+
+.border-pencil-green {
+  border-color: #86EFAC;
+  box-shadow: 2px 3px 0px 0px rgba(34, 197, 94, 0.2);
+}
+
+.border-pencil-pink {
+  border-color: #F9A8D4;
+  box-shadow: 2px 3px 0px 0px rgba(236, 72, 153, 0.2);
+}
+
+.border-pencil-purple {
+  border-color: #D8B4FE;
+  box-shadow: 2px 3px 0px 0px rgba(168, 85, 247, 0.2);
+}
+
+/* Custom scrollbar for friendly look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F3ECE1;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D5C7B3;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8A68F;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
